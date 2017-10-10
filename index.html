@@ -3,15 +3,50 @@
    <head>
       <meta charset="utf-8">
       <title>T H R I V E</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=0.8">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
+
    <body>
+<<<<<<< HEAD
+      <a href="index.html" class="scrollToTop">
+         <i class="fa fa-angle-double-up" style="font-size:24px"></i>
+      </a>
+
+      <section id="landing-page">
+         <img src="img/1.jpg">
+         <!-- <div class="topnav" id="myTopnav">
+            <a href="#">Meny 1</a>
+            <a href="#">Meny 2</a>
+            <a href="#">Meny 3</a>
+         </div> -->
+         <!-- <div class="logo">
+            <img src="img/logo.jpg" height="40px" width="200px">
+         </div> -->
+=======
       <section id="landing-page  ">
          <div class="logo">
             <h1>T H R I V E</h1>
          </div>
+>>>>>>> ed631a5b0ae7920929931df68457bc44d33040d4
+
+         	<!-- <a class="btn-down" href="om.html">Ta reda på mer</a> -->
+      </section>
 
 
+      <section id="page-one">
+         <img src="img/2.jpg">
+      </section>
+
+
+      <section id="page-two">
+
+      </section>
+
+
+      <section id="page-three">
 
       </section>
 
@@ -22,7 +57,54 @@
 
 
 
-
-
    </body>
 </html>
+<script>
+
+// // When the user scrolls down 100px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+//
+// function scrollFunction() {
+// if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+//      document.getElementById("homebtn").style.display = "block";
+// } else {
+//      document.getElementById("homebtn").style.display = "none";
+// }
+// }
+//
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+// document.body.scrollTop = 10; // For Chrome, Safari and Opera
+// document.documentElement.scrollTop = 10; // For IE and Firefox
+// }
+
+$(document).ready(function(){
+
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 200) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},600);
+		return false;
+	});
+
+});
+
+
+// Highlighted current link
+// $(function(){
+//   $('a').each(function() {
+//     if ($(this).prop('href') == window.location.href) {
+//       $(this).addClass('current');
+//     }
+//   });
+// });
+
+</script>
