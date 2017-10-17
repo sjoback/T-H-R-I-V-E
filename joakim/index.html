@@ -1,28 +1,168 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="utf-8">
-      <title>T H R I V E</title>
-      <link rel="stylesheet" href="css/style.css">
-   </head>
-   <body>
-      <section id="landing-page">
-         <div class="logo">
-            <h1>T H R I V E</h1>      
-         </div>
+<html lang="en">
+<head>
+   <!-- EGNA SCRIPTS -->
+   <title>T H R I V E</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta name="description" content="Some slide and push menu demos using CSS3 transitions.">
+   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/minegna.css">
+
+<!-- SLIDE OUT MENU -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="jquery-3.2.1.min.js"></script>
+   <script src="js/dist/menu.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<!-- SCROLL SNAPPING -->
+<script src="jquery.fullPage.min.js"></script>
+<link rel="stylesheet" href="jquery.fullPage.css">
+
+
+</head>
+
+<body>
+   <a href="index.html" class="scrollToTop">
+      <i class="fa fa-angle-double-up" style="font-size:24px"></i>
+   </a>
+
+
+<section id="page-one">
+   <img src="img/1.jpg">
+</section>
 
 
 
-      </section>
+<section id="page-two">
+   <img src="img/2.png">
+   <button class="leftButton">Read more..</button>
+   <div id="o-wrapper" class="o-wrapper">
+   </div>
+   <nav id="c-menu--push-left" class="c-menu c-menu--push-left">
+
+      <button class="c-menu__close">&larr; Close Menu</button>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+           ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum."</p>
+   </nav>
+   <div id="fadeEffect" class="fadeEffect"></div>
+</section>
+
+
+<section id="page-three">
+   <img src="img/3.png">
+   <div id="o-wrapper" class="o-wrapper">
+      <button class="rightButton">Read more..</button>
+   </div>
+   <nav id="c-menu--push-right" class="c-menu c-menu--push-right">
+
+     <button class="c-menu__close">Close Menu &rarr;</button>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+         elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+           in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+           officia deserunt mollit anim id est laborum."</p>
+   </nav>
+   <div id="fadeEffect" class="fadeEffect"></div>
+</section>
+
+
+<section id="page-four">
+   <img src="img/4.png">
+   <div class="mediabtn">
+      <a href="" target ="_blank" class="fa fa-facebook fa-3x"></a>
+   </div>
+</section>
+
+</body>
+
+<!-- menus script -->
+<script>
+
+// PUSH OUT LEFT MENU
+   var pushLeft = new Menu({
+   //   wrapper: '.o-wrapper',
+     type: 'push-left',
+     menuOpenerClass: '.leftButton',
+     maskId: '.fadeEffect'
+   });
+
+   var pushLeftBtn = document.querySelector('.leftButton');
+
+   pushLeftBtn.addEventListener('click', function(e) {
+     e.preventDefault;
+     pushLeft.open();
+   });
+
+// PUSH OUT RIGHT MENU
+   var pushRight = new Menu({
+   //   wrapper: '.o-wrapper',
+     type: 'push-right',
+     menuOpenerClass: '.rightButton',
+     maskId: '.fadeEffect'
+   });
+
+   var pushRightBtn = document.querySelector('.rightButton');
+
+   pushRightBtn.addEventListener('click', function(e) {
+     e.preventDefault;
+     pushRight.open();
+   });
+</script>
+
+
+
+
+<script>
+//  FULLPAGE
+$(document).ready(function(){
+   $('#vrapper').fullpage();
+});
 
 
 
 
 
 
+	//Check to see if the window is top if not then display button
+// 	$(window).scroll(function(){
+// 		if ($(this).scrollTop() > 100) {
+// 			$('.scrollToTop').fadeIn();
+// 		} else {
+// 			$('.scrollToTop').fadeOut();
+// 		}
+// 	});
+//
+// 	//Click event to scroll to top
+// 	$('.scrollToTop').click(function(){
+// 		$('html, body').animate({scrollTop : 0},600);
+// 		return false;
+// 	});
+//
+// });
+
+var offset = 300,
+	//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+	offset_opacity = 1200,
+	//duration of the top scrolling animation (in ms)
+	scroll_top_duration = 700;
 
 
-
-
-   </body>
+Highlighted current link
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>
 </html>

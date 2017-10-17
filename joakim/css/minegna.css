@@ -8,49 +8,63 @@ body {
    background-color: black;
 }
 
+p {
+   color: black;
+   margin-top: 20px;
+}
+
 img {
-   width: 100vW;
+   width: 100%;
    max-width: 100%;
    height: 100%;
    max-height: 100%;
-   object-fit: cover;
 }
 
-#landing-page {
-   height: 100vh;
-   width: 90%;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-   margin: 0 auto;
-}
+
+/* SCROLL SNAPPING */
+
+
+/* BUTTON HOVER EFFECT */
+
 #page-one {
-   background-color: white;
-   height: 100vh;
-   width: 90%;
+   /*background-image: url("../img/1.jpg");*/
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
-   margin: 0 auto;
+   position: relative;
 }
 #page-two {
-   background-color: #ff8f0b;
-   height: 100vh;
-   width: 90%;
-   display: flex;
+   /*background-image: url("../img/2.png");*/
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
-   margin: 0 auto;
+   position: relative;
 }
 #page-three {
-   background-color: #6bcde1;
-   height: 100vh;
-   width: 90%;
+   /*background-image: url("../img/autumn.jpg");*/
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
-   margin: 0 auto;
+   position: relative;
+}
+#page-four {
+   /*background-image: url("../img/footer.png");*/
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   position: relative;
 }
 
 .logo {
@@ -88,7 +102,7 @@ img {
 	padding:10px;
 	color: #444;
 	text-decoration: none;
-	position:fixed;
+	position: relative;
    top: 92%;
    left: 91%;
 	display:none;
@@ -97,62 +111,39 @@ img {
    border-radius: 5px;
    text-align: center;
 }
+.scrollToTop: hover {
 
+}
 
 .fa-angle-double-up {
    color: white;
    font-size: 30px;
 }
-/*.btn-down {
-	background-color: grey;
-	border: 5px;
-	border-radius: 7px;
-	color: white;
-	padding: 17px 23px;
-	text-decoration: none;
-	display: inline-block;
-	opacity: 0.8;
-}
-.btn-down {
-	background-color: lightgrey;
-	color: white;
-	opacity: 1.0;
-}*/
 
-/*.topbtn {
-   background-color: yellow;
-   width: 50px;
-   height: 50px;
-}*/
-
-/* NAVBAR*/
-.topnav {
-	overflow: hidden;
-	background-color: transparent;
-	font-family: verdana;
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	font-size: 16px;
-}
-.topnav a {
-	float: left;
-	display: block;
+/* SOCIAL MEDIA BUTTONS */
+.fa {
+	font-size: 30px;
+	top: 100%;
 	text-align: center;
-	padding: 10px 10px;
-
+	text-decoration: none;
 }
-.topnav a:hover {
-	background-color: transparent;
-	color: #0083b3;
+.fa:hover {
+   color: black;
+   background-color: white;
+   border: 2px solid black;
 }
-.topnav .icon {
-    display: none;
+.fa-facebook {
+	opacity: 0.8;
+	background: black;
+	color: white;
+	border-radius: 25%;
+	width: 65px;
+	height: 65px;
+   padding-top: 18px;
+   padding-left: 18px;
 }
-
-.current {
-	text-decoration: underline;
-	color: #0083b3;
+.mediabtn {
+	position: absolute;
+   top: 56%;
+   left: 25%;
 }
-
-/*TEST HÄR*/
