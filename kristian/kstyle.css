@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+}
+.landing-page{
+  height: 100vh;
+  background-image: url('resorces/Website_01 UT.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.page1{
+  height: 100vh;
+  background-image: url('resorces/Website_02 UT.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page2{
+  height: 100vh;
+  background-image: url('resorces/Website_03 UT.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page3{
+  height: 100vh;
+  background-image: url('resorces/Website_04_slide01 UT.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
