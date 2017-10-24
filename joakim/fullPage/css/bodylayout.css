@@ -1,0 +1,132 @@
+* {
+   margin: 0;
+}
+
+img {
+   height: 100%;
+   max-height: 100vh;
+   width: 100%;
+   max-width: 100%;
+   background-size: cover;
+   background-position: center center;
+   position: relative;
+}
+p {
+   background-color: black;
+   color: white;
+   display: inline;
+   padding-left: 5px;
+   padding-right: 5px;
+   text-decoration: italic;
+
+}
+
+/* Logo img on page 1 */
+.logo-small {
+   width: 200px;
+   margin-bottom: 10px;
+}
+/* Logo img on last page */
+.logo-big {
+   width: 300px;
+   height: 70px;
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%);
+}
+
+.text-box1 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.text-box2 {
+   position: absolute;
+   top: 50%;
+   left: 5%;
+}
+
+.text-box3 {
+   position: absolute;
+   top: 30%;
+   right: 5%;
+}
+
+.stor-text {
+   font-family: tahoma;
+   font-size: 45px;
+   margin-top: 2px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+@media only screen and (max-width: 500px) {
+    .stor-text {
+   font-size: 25px;
+    }
+}
+
+.liten-text {
+   color: black;
+   margin-top: 3px;
+   padding-left: 20px;
+}
+
+#section1 {
+   background-image: url("../img/Website_01 UT.png");
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
+   max-width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   position: relative;
+}
+
+#section2 {
+   background-image: url("../img/Website_02 UT.png");
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
+   max-width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   position: relative;
+}
+
+#section3 {
+   /*width: 100%;
+   height: 100%;
+   position: relative;*/
+   background-image: url("../img/Website_03 UT.png");
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
+   max-width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   position: relative;
+}
+
+#section4 {
+   /*width: 100%;
+   height: 100%;
+   position: relative;*/
+   background-image: url("../img/lastpage.jpg");
+   height: 100%;
+   max-height: 100%;
+   width: 100%;
+   max-width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   position: relative;
+}
