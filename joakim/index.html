@@ -17,13 +17,25 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
 <!-- SCROLL SNAPPING -->
-<script src="jquery.fullPage.min.js"></script>
-<link rel="stylesheet" href="jquery.fullPage.css">
+   <script src="jquery.fullPage.min.js"></script>
+   <link rel="stylesheet" href="jquery.fullPage.css">
 
-
+<!-- FULLPAGE -->
+<script type="text/javascript" src="js/fullPage/scrolloverflow.js"></script>
+<script type="text/javascript" src="js/fullPage/jquery.fullPage.js"></script>
+<script type="text/javascript" src="js/fullPage/examples.js"></script>
+<script type="text/javascript">
+   $(document).ready(function() {
+      $('#fullpage').fullpage({
+         sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
+      });
+   });
+</script>
 </head>
 
 <body>
+   <div id="fullpage">
+
    <a href="index.html" class="scrollToTop">
       <i class="fa fa-angle-double-up" style="font-size:24px"></i>
    </a>
@@ -34,11 +46,24 @@
 </section>
 
 
-
 <section id="page-two">
-   <img src="img/2.png">
+
    <button class="leftButton">Read more..</button>
+   <!-- Box with text on top of image -->
+   <div class="textBoxTwo">
+      <div class="text-two">
+         <p class="two">
+            RESPEKTFULLT MODE
+         </p>
+      </div>
+      <div class="text-two">
+         <p class="two">
+            UTAN KOMPOMISSER
+         </p>
+      </div>
+   </div>
    <div id="o-wrapper" class="o-wrapper">
+      <img src="img/2.png">
    </div>
    <nav id="c-menu--push-left" class="c-menu c-menu--push-left">
 
@@ -56,9 +81,9 @@
 
 
 <section id="page-three">
-   <img src="img/3.png">
-   <div id="o-wrapper" class="o-wrapper">
-      <button class="rightButton">Read more..</button>
+   <button class="rightButton">Read more..</button>
+   <div id="o-wrapper" class="o-wrapperR">
+      <img src="img/3.png">
    </div>
    <nav id="c-menu--push-right" class="c-menu c-menu--push-right">
 
@@ -82,14 +107,14 @@
    </div>
 </section>
 
+</div>
 </body>
 
 <!-- menus script -->
 <script>
-
 // PUSH OUT LEFT MENU
    var pushLeft = new Menu({
-   //   wrapper: '.o-wrapper',
+     wrapper: '.o-wrapper',
      type: 'push-left',
      menuOpenerClass: '.leftButton',
      maskId: '.fadeEffect'
@@ -104,7 +129,7 @@
 
 // PUSH OUT RIGHT MENU
    var pushRight = new Menu({
-   //   wrapper: '.o-wrapper',
+     wrapper: '.o-wrapperR',
      type: 'push-right',
      menuOpenerClass: '.rightButton',
      maskId: '.fadeEffect'
@@ -122,34 +147,29 @@
 
 
 <script>
-//  FULLPAGE
-$(document).ready(function(){
-   $('#vrapper').fullpage();
-});
-
 
 
 
 
 
 	//Check to see if the window is top if not then display button
-// 	$(window).scroll(function(){
-// 		if ($(this).scrollTop() > 100) {
-// 			$('.scrollToTop').fadeIn();
-// 		} else {
-// 			$('.scrollToTop').fadeOut();
-// 		}
-// 	});
-//
-// 	//Click event to scroll to top
-// 	$('.scrollToTop').click(function(){
-// 		$('html, body').animate({scrollTop : 0},600);
-// 		return false;
-// 	});
-//
-// });
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
 
-var offset = 300,
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},600);
+		return false;
+	});
+
+});
+
+var offset = 100,
 	//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
 	offset_opacity = 1200,
 	//duration of the top scrolling animation (in ms)

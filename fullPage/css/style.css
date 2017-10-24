@@ -1,10 +1,11 @@
-/*
+
 .o-wrapper {
   -webkit-transition: -webkit-transform 0.3s;
           transition: transform 0.3s;
 }
 
-.o-container {
+
+/* .o-container {
   margin: 0 auto;
   padding: 0 12px;
   max-width: 960px;
@@ -177,12 +178,12 @@
 
 .fadeEffect {
    position: fixed;
-   z-index: 100;
+   /*z-index: 100;*/
    top: 0;
    left: 0;
    overflow: hidden;
    width: 0;
-   height: 0;
+   height: 100%;
    background-color: #000;
    opacity: 0;
    -webkit-transition: opacity 0.5s, width 0s 0.5s, height 0s 0.5s;
@@ -203,20 +204,13 @@
    left: 7%;
    margin: 4px;
    padding: 12px 24px;
-   color: black;
-   background-color: transparent;
+   color: white;
+   background-color: black;
    font-size: 14px;
    border: solid 2px black;
+   border-radius: 2px;
    cursor: pointer;
-   box-shadow: 0px 0px 4px 1px black;
-}
-.leftButton: active {
-   border-color: white;
-}
-.leftButton: hover {
-   background-color: black;
-   color: white;
-   box-shadow: 0px 0px 0px 0px black;
+   /*box-shadow: 0px 0px 4px 1px black;*/
 }
 
 .rightButton {
@@ -225,10 +219,11 @@
    right: 30%;
    margin: 4px;
    padding: 12px 24px;
-   color: black;
-   background-color: transparent;
+   color: white;
+   background-color: black;
    font-size: 14px;
    border: solid 2px black;
+   border-radius: 2px;
    cursor: pointer;
-   box-shadow: 0px 0px 4px 1px black;
+   /*box-shadow: 0px 0px 4px 1px black;*/
 }

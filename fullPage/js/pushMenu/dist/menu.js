@@ -6,7 +6,7 @@
    * Extend Object helper function.
    */
   function extend(a, b) {
-    for(var key in b) {
+    for(var key in b) { 
       if(b.hasOwnProperty(key)) {
         a[key] = b[key];
       }
@@ -38,15 +38,7 @@
    */
   Menu.prototype.options = {
     wrapper: '#o-wrapper',          // The content wrapper
-    type: 'push-left',             // The menu type
-    menuOpenerClass: '.c-button',   // The menu opener class names (i.e. the buttons)
-   //  maskId: '#c-mask'
-   maskId: '.fadeEffect'               // The ID of the mask
-                  // The ID of the mask
-  };
-  Menu.prototype.options = {
-    wrapper: '#o-wrapperR',          // The content wrapper
-    type: 'push-right',             // The menu type
+    type: 'slide-left',             // The menu type
     menuOpenerClass: '.c-button',   // The menu opener class names (i.e. the buttons)
     maskId: '#c-mask'               // The ID of the mask
   };
