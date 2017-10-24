@@ -1,40 +1,9 @@
-* {
+body{
   margin: 0;
-  overflow-x: hidden;
 }
-.landingPage{
+.landing-page{
   height: 100vh;
-  background-image: url(../img/1.jpg);
+  background-image: url('resorces/Website_01 UT.png');
   background-size: cover;
-  min-height: 100%;
-  position: relative;
-}
-.pageOne{
-  height: 100vh;
-  background-image: url(../img/2.jpg);
-  background-size: cover;
-}
-
-.landingPage:hover #slide {
-    transition: 1s;
-    left: 0;
-}
-#slide {
-    position: absolute;
-    left: -200px;
-    width: 200px;
-    height: 100%;
-    background: blue;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
-}
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-@keyframes slide {
-    100% { left: 0; }
-}
-.button{
-  position: relative;
-  height: 100px;
+  background-repeat: no-repeat;
 }
