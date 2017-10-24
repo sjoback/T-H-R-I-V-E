@@ -1,32 +1,56 @@
 body{
   margin: 0;
 }
-.landing-page{
+.section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#section1{
   height: 100vh;
   background-image: url('resorces/Website_01 UT.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
-.page1{
+#section2{
   height: 100vh;
   background-image: url('resorces/Website_02 UT.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.page2{
+#section3{
   height: 100vh;
   background-image: url('resorces/Website_03 UT.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.page3{
+#section4{
   height: 100vh;
   background-image: url('resorces/Website_04_slide01 UT.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+p{
+  background-color: black;
+  color: white;
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: italic;
+}
+.text-box1 {
+  text-align: center;
+}
+
+/*.text-box1 {
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}*/
