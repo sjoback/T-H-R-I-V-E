@@ -1,1 +1,1 @@
-# T-H-R-I-V-E
+# T H R I V E
