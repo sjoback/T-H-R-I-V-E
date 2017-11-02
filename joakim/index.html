@@ -3,36 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<title>T H R I V E</title>
-		<link rel="icon" type="image/gif/png" href="img/suitcase.jpg">
+		<link rel="icon" type="image/gif/png" href="img/triangle.png">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
 		<!-- CSS -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" type="text/css" href="css/bodylayout.css">
 		<link rel="stylesheet" type="text/css" href="css/buttons.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- JQUERY -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- PUSH OUT MENU -->
-
-
 		<!-- FULLPAGE -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/fullPage.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('#fullpage').fullpage({
-				});
-			});
-		</script>
 		<!-- SLIDESHOW -->
-
-
-
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 
 <body>
 <div id="fullpage">
 	<!-- Section 1 -->
-	<div class="section" id="section1">
+	<!-- <div class="section" id="section1">
 		 <div class="text-box1">
 			 <img class="logo-small" src="img/logo.png">
 			 <div class="stor-text">
@@ -48,7 +41,7 @@
 				 <p>FASHION</p>
 			 </div>
 		 </div>
-	</div>
+	</div> -->
 
 
 	<!-- Section 2 -->
@@ -85,11 +78,24 @@
 
 	<!-- Section 4 -->
 	<div class="section" id="section4">
-		<div class='slider'>
-		  <div class='slide1'></div>
-		  <div class='slide2'></div>
-		  <div class='slide3'></div>
-		</div>
+		<!-- <div class="slideshow">
+			<img class="mySlides fadein" src="img/eco.png">
+			<img class="mySlides fadein" src="img/rättvist.png">
+			<img class="mySlides fadein" src="img/hållbart.png">
+		</div> -->
+
+		<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="img/eco.png" style="width:100%">
+  <img class="mySlides" src="img/hållbart.png" style="width:100%">
+  <img class="mySlides" src="img/rättvist.png" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
 	</div>
 
 
@@ -104,8 +110,97 @@
 				SKANDINAVIENS LEDANDE<BR>KONCEPTBUTIK INOM<BR>EKOLOGISKT, MILJÖVÄNLIGT,<BR>
 				RÄTTVIST OCH DJURVÄNLIGT<BR>MODE.
 			</div>
+		</div>
+		<div class="centrerad-text">
+			<div class="stor-text">
+				<p>BESÖK OSS</p>
+			</div>
+			<div class="liten-text">
+				MÅNDAG-FREDAG 11-18<BR>LÖRDAG 11-16<BR>SÖNDAG 12-16<BR>LUNCHSTÄNGT VARDAGAR 13:30-14
+			</div>
+		</div>
+		<div class="media-buttons">
+			<a href="https://www.facebook.com/thrivestore.se" target ="_blank" class="fa fa-facebook fa-3x"></a>
+			<a href="https://www.instagram.com/thrivestore.se" target ="_blank" class="fa fa-instagram fa-4x"></a>
+			<a href="https://www.youtube.com/channel/UCwyzo2XinM0b1VSMpbMGY3w" target="_blank" class="fa fa-youtube-play" style="font-size: 60px"></a>
+		</div>
 	</div>
-</div>
+
+
 </div>
 </body>
 </html>
+
+<script>
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+	});
+});
+
+// TO-top BUTTON
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+
+
+
+// Slideshow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 9000);
+}
+
+// Slideshow 2
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+
+
+
+
+
+</script>

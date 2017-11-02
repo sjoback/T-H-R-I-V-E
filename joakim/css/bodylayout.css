@@ -1,5 +1,8 @@
 * {
    margin: 0;
+   font-family: Muli;
+   font-style: normal;
+   font-variant: normal;
 }
 
 img {
@@ -13,12 +16,14 @@ img {
 }
 p {
    /*background-color: black;*/
-   background: rgba(0, 0, 0, 0.8);
+   background: rgba(0, 0, 0, 0.9);
    color: white;
    display: inline;
    padding-left: 5px;
    padding-right: 5px;
-   text-decoration: italic;
+   /*font-family: Muli;*/
+   font-style: normal;
+   font-variant: normal;
 
 }
 
@@ -32,7 +37,7 @@ p {
    width: 300px;
    height: 70px;
    position: absolute;
-   top: 20%;
+   top: 10%;
    left: 50%;
    margin-right: -50%;
    transform: translate(-50%, -50%);
@@ -65,10 +70,18 @@ p {
    left: 5%;
 }
 
+.centrerad-text {
+   text-align: center;
+   position: relative;
+   float: center;
+   left: 10%;
+   top: 30%;
+}
+
 .stor-text {
-   font-family: tahoma;
+   /*font-family: tahoma;*/
    font-size: 45px;
-   margin-top: 2px;
+   margin-top: -5px;
    padding-left: 15px;
    padding-right: 15px;
 }
@@ -80,9 +93,47 @@ p {
 
 .liten-text {
    color: black;
-   margin-top: 3px;
+   margin-top: -7px;
    padding-left: 20px;
    font-size: 26px;
+}
+
+.media-buttons {
+   position: absolute;
+   left: 10%;
+   top: 62%;
+}
+.fa {
+	font-size: 30px;
+   background: black;
+   color: white;
+	top: 100%;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+   margin: 5px;
+}
+.fa-instagram {
+	border-radius: 25%;
+	width: 60px;
+	height: 60px;
+   padding-right: 11px;
+   padding-bottom: 14px;
+   padding-left: 11px;
+   padding-top: 5px;
+}
+.fa-facebook {
+	border-radius: 25%;
+	width: 60px;
+	height: 60px;
+   padding-left: 18px;
+   padding-top: 19px;
+}
+.fa-youtube-play {
+	border-radius: 25%;
+	width: 60px;
+	height: 60px;
+	padding: 10px;
 }
 
 #section1 {
@@ -92,7 +143,7 @@ p {
    width: 100%;
    max-width: 100%;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: 100% 100%;
    background-position: center center;
    position: relative;
 }
@@ -111,8 +162,7 @@ p {
 
 #section3 {
    /*width: 100%;
-   height: 100%;
-   position: relative;*/
+   height: 100%; */
    background-image: url("../img/Website_03 UT.png");
    height: 100%;
    max-height: 100%;
@@ -127,9 +177,8 @@ p {
 #section4 {
    /*width: 100%;
    height: 100%;
-   position: relative;*/
-   background-color: white;
    /*background-image: url("../img/Website_04_slide01 MT.png");*/
+   background-color: black;
    height: 100%;
    max-height: 100%;
    width: 100%;
@@ -141,9 +190,8 @@ p {
 }
 #section5 {
    /*width: 100%;
-   height: 100%;
-   position: relative;*/
-   background-image: url("../img/lastpage.jpg");
+   height: 100%; */
+   background-image: url("../img/lastpage.png");
    height: 100%;
    max-height: 100%;
    width: 100%;
@@ -155,56 +203,52 @@ p {
 }
 
 /* SLIDESHOW */
-.slider {
-  max-width: 100%;
-  height: 100%;
-  position: relative;
+.mySlides {
+   display: none;
 }
-.slide1,.slide2,.slide3,.slide4,.slide5 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.slideshow {
+   height: 100%;
+   width: 100%;
+   position: absolute;
 }
-.slide1 {
-   background: url("../img/Website_04_slide01 MT.png")no-repeat center;
-   background-size: cover;
-   animation:fade 12s infinite;
-   -webkit-animation:fade 12s infinite;
-   animation-duration: 7s;
-}
-.slide2 {
-   background: url("../img/Website_02 MT.png")no-repeat center;
-   background-size: cover;
-   animation:fade2 12s infinite;
-   -webkit-animation:fade2 12s infinite;
-   animation-duration: 7s;
-}
-.slide3 {
-   background: url("../img/Website_03 MT.png")no-repeat center;
-   background-size: cover;
-   animation:fade3 12s infinite;
-   -webkit-animation:fade3 12s infinite;
-   animation-duration: 7s;
+.fadein {
+   animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}
 }
 
-@keyframes fade
-{
-  0%   {opacity:1}
-  33.333% { opacity: 0}
-  66.666% { opacity: 0}
-  100% { opacity: 1}
+
+@media only screen and (max-width: 500px) {
+    .mySlides {
+      height: 100%;
+      max-height: 100vh;
+      width: 100%;
+      max-width: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
 }
-@keyframes fade2
-{
-  0%   {opacity:0}
-  33.333% { opacity: 1}
-  66.666% { opacity: 0 }
-  100% { opacity: 0}
+
+/* TO-TOP BUTTON */
+.scrollToTop{
+	width:100px;
+	height:130px;
+	padding:10px;
+	text-align:center;
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top:75px;
+	right:40px;
+	display:none;
+	background: url('arrow_up.png') no-repeat 0px 20px;
 }
-@keyframes fade3
-{
-  0%   {opacity:0}
-  33.333% { opacity: 0}
-  66.666% { opacity: 1}
-  100% { opacity: 0}
+.scrollToTop:hover{
+	text-decoration:none;
 }
+
+
+/* SLIDESHOW 2 */
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
