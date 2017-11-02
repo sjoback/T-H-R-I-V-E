@@ -84,7 +84,7 @@ body{
   margin-bottom: 10%;
 }
 .s2-closebtn {
-  background-image: url("../resources/closeBtn.jpg");
+  background-image: url("../resources/closeBtn.svg");
   background-size: contain;
   width: 25px;
   height: 25px;
@@ -133,4 +133,8 @@ body{
 }
 .section4{
   background-image: url('../resources/Website_04_slide01UT.png');
+}
+
+@media screen and (max-width: 700px){
+
 }

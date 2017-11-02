@@ -1,16 +1,16 @@
 function open_read_more() {
-    document.getElementById("s2-readMore-id").style.width = "30%";
-    document.getElementById("s2-readMore-id").style.opacity = "1";
-    document.getElementById("section2-id").style.marginLeft = "30%";
-    document.getElementById("section2-textbox-id").style.left = "36%";
-    document.getElementById("section2-button-id").style.left = "45%";
-    document.getElementById("shade-layer-id").style.opacity = "0.7";
+  document.getElementById("s2-readMore-id").style.width = "30%";
+  document.getElementById("s2-readMore-id").style.opacity = "1";
+  document.getElementById("section2-id").style.marginLeft = "30%";
+  document.getElementById("section2-textbox-id").style.left = "36%";
+  document.getElementById("section2-button-id").style.left = "45%";
+  document.getElementById("shade-layer-id").style.opacity = "0.7";
 }
 function close_read_more() {
-    document.getElementById("s2-readMore-id").style.width = "0";
-    document.getElementById("s2-readMore-id").style.opacity = "0";
-    document.getElementById("section2-id").style.marginLeft= "0";
-    document.getElementById("section2-textbox-id").style.left = "6%";
-    document.getElementById("section2-button-id").style.left = "30%";
-    document.getElementById("shade-layer-id").style.opacity = "0";
+  document.getElementById("s2-readMore-id").style.width = "0";
+  document.getElementById("s2-readMore-id").style.opacity = "0";
+  document.getElementById("section2-id").style.marginLeft= "0";
+  document.getElementById("section2-textbox-id").style.left = "6%";
+  document.getElementById("section2-button-id").style.left = "30%";
+  document.getElementById("shade-layer-id").style.opacity = "0";
 }
