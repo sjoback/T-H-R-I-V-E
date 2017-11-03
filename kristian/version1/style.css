@@ -41,6 +41,37 @@ body{
   width: 200px;
   margin-bottom: 10px;
 }
+/*scroll test*/
+
+.scroll-icon span {
+  position: absolute;
+  top: 84vh;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-animation: scrollDown 5s infinite;
+  animation: scrollDown 5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes scrollDown {
+  0% {
+    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+/*scroll test*/
 
 .section2{
   background-image: url('../resources/Website_02UT.png');
@@ -55,23 +86,27 @@ body{
   transition: 0.5s;
 }
 
-/*start of test 2*/
-
 .section2-button{
   cursor: pointer;
   color: white;
   font-size: 26px;
   transition: 0.5s;
-  /*transform: skew(20deg);
-    -webkit-transform: skew(20deg);
-      -moz-transform: skew(20deg);
-        -o-transform: skew(20deg);
-          display: inline-block;*/
+  margin-left: 1px;
+  width: 110px;
+  height: 0;
+  position: relative;
+  border-top: 40px solid rgba(0, 0, 0, 0.8);
+  border-left: 30px solid transparent;
+  box-sizing: content-box;
 }
 .section2-button span{
-  background: rgba(0, 0, 0, 0.8);
-  padding: 0px 15px 0px 15px;
-  margin-left: 1px;
+  position: absolute;
+  top: -36px;
+}
+
+.section2-button:hover{
+  border-top: 40px solid transparent;
+  color: black;
 }
 .thrivestore-link{
   font-size: 15px;
@@ -84,20 +119,18 @@ body{
   margin-bottom: 10%;
 }
 .s2-closebtn {
-  background-image: url("../resources/closeBtn.jpg");
+  background-image: url("../resources/closeBtn.svg");
   background-size: contain;
   width: 25px;
   height: 25px;
   display: block;
   border-radius: 50%;
 }
-
 .s2-readMore p {
   font-size: 20px;
   padding: 0% 5% 5% 5%;
   text-align: center;
   line-height: 150%;
-
 }
 .s2-readMore h2 {
   padding: 0% 5% 10% 5%;
@@ -127,7 +160,6 @@ body{
   transition: 0.5s, transform 5s;
 }
 
-/*end of test 2*/
 .section3{
   background-image: url('../resources/Website_03UT.png');
 }
