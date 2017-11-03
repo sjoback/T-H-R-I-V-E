@@ -62,16 +62,21 @@ body{
   color: white;
   font-size: 26px;
   transition: 0.5s;
-  /*transform: skew(20deg);
-    -webkit-transform: skew(20deg);
-      -moz-transform: skew(20deg);
-        -o-transform: skew(20deg);
-          display: inline-block;*/
+  margin-left: 1px;
+  width: 110px;
+  height: 0;
+  position: relative;
+  border-top: 40px solid rgba(0, 0, 0, 0.8);
+  border-left: 30px solid transparent;
+  box-sizing: content-box;
 }
 .section2-button span{
-  background: rgba(0, 0, 0, 0.8);
-  padding: 0px 15px 0px 15px;
-  margin-left: 1px;
+  position: absolute;
+  top: -36px;
+}
+.section2-button:hover{
+  border-top: 40px solid transparent;
+  color: black;
 }
 .thrivestore-link{
   font-size: 15px;
@@ -91,13 +96,11 @@ body{
   display: block;
   border-radius: 50%;
 }
-
 .s2-readMore p {
   font-size: 20px;
   padding: 0% 5% 5% 5%;
   text-align: center;
   line-height: 150%;
-
 }
 .s2-readMore h2 {
   padding: 0% 5% 10% 5%;
@@ -133,8 +136,4 @@ body{
 }
 .section4{
   background-image: url('../resources/Website_04_slide01UT.png');
-}
-
-@media screen and (max-width: 700px){
-
 }
