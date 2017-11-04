@@ -23,10 +23,39 @@
 				<div id="circle2" class="circle"></div>
 				<div id="circle3" class="circle"></div>
 				<div id="circle4" class="circle"></div>
-
 			</div>
 		</div>
-	</body>
 
+		<!-- <img id="slider" src="../img/slide1.png">
+		<div id="indicator">
+			<div id="circle1" class="circle"></div>
+			<div id="circle2" class="circle"></div>
+			<div id="circle3" class="circle"></div>
+			<div id="circle4" class="circle"></div>
+		</div> -->
+
+	</body>
+<script>
+// SLIDESHOW
+var imgArray = [
+ '../img/slide2.png',
+ '../img/slide1.png',
+ '../img/slide3.png',
+ '../img/slide4.png'],
+ curIndex = 0;
+ imgDuration = 9000;
+
+function slideShow() {
+ document.getElementById('slider').className += "fadeOut";
+ setTimeout(function() {
+	  document.getElementById('slider').src = imgArray[curIndex];
+	  document.getElementById('slider').className = "";
+ },1000);
+ curIndex++;
+ if (curIndex == imgArray.length) { curIndex = 0; }
+ setTimeout(slideShow, imgDuration);
+}
+slideShow();
+</script>
 
 </html>
