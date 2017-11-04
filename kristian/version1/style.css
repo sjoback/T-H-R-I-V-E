@@ -1,5 +1,7 @@
-body{
+*{
   margin: 0;
+}
+body{
   font-family: 'Muli', sans-serif;
 }
 .section{
@@ -24,6 +26,13 @@ body{
   font-size: 26px;
   margin: 1px;
 }
+@media screen and (max-width: 500px){
+  .big-text{
+    font-size: 35px;
+    margin: 1px;
+    color: white;
+  }
+}
 .section1{
   background-image: url('../resources/Website_01UT.png');
   transition: 0.5s;
@@ -41,8 +50,6 @@ body{
   width: 200px;
   margin-bottom: 10px;
 }
-/*scroll test*/
-
 .scroll-icon span {
   position: absolute;
   top: 84vh;
@@ -71,13 +78,10 @@ body{
     opacity: 0;
   }
 }
-/*scroll test*/
-
 .section2{
   background-image: url('../resources/Website_02UT.png');
   transition: 0.5s;
 }
-
 .section2-textbox{
   position: absolute;
   left: 6%;
@@ -85,7 +89,6 @@ body{
   text-align: left;
   transition: 0.5s;
 }
-
 .section2-button{
   cursor: pointer;
   color: white;
@@ -103,7 +106,6 @@ body{
   position: absolute;
   top: -36px;
 }
-
 .section2-button:hover{
   border-top: 40px solid transparent;
   color: black;
@@ -121,6 +123,7 @@ body{
 .s2-closebtn {
   background-image: url("../resources/closeBtn.svg");
   background-size: contain;
+  cursor: pointer;
   width: 25px;
   height: 25px;
   display: block;

@@ -10,9 +10,7 @@
 </head>
 <body>
   <div id="fullpage">
-
     <div id="section1-id" class="section section1">
-
       <div id="section1-textbox-id" class="section1-textbox">
         <img class="section1-logo" src="../resources/logo.png">
         <p class="big-text"><span>EASE YOUR</span></p>
@@ -43,7 +41,6 @@
         <a href="javascript:void(0)" class="s2-closebtn" onclick="close_read_more2()"></a>
       </div>
     </div>
-
     <div id="section3-id" class="section section3">
       <div id="s3-shade-layer-id" class="s3-shade-layer"></div>
       <div id="section3-textbox-id" class="section3-textbox">
@@ -65,10 +62,6 @@
         <a href="javascript:void(0)" class="s3-closebtn" onclick="close_read_more3()"></a>
       </div>
     </div>
-
-
-
-
     <div class="section section4">
     </div>
   </div>
@@ -81,15 +74,17 @@
 <script type="text/javascript" src="../packages/javascript.fullPage.js"></script>
 <script>
 fullpage.initialize('#fullpage', {
-	anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+  fitToSection: true,
   onLeave: function(index){
-		//after leaving section 2
-		if(index == 2){
-			close_read_more2();
-		}
+    //after leaving section 2
+    if(index == 2){
+      close_read_more2();
+    }
+    //after leaving section 2
     if(index == 3){
       close_read_more3();
     }
-	}
+  }
 });
 </script>
