@@ -22,7 +22,7 @@
       </div>
       <div class="scroll-icon"><span></span></div>
     </div>
-    <div id="section2-id" class="section section2">
+    <div id="section2-id" class="section section2" onscroll="close_read_more2()">
       <div id="s2-shade-layer-id" class="s2-shade-layer"></div>
       <div id="section2-textbox-id" class="section2-textbox">
         <p class="little-text">HOS THRIVE ÄR ALLA VINNARE.</p>
@@ -80,5 +80,17 @@
 <!--Code for the fullpage plugg-in-->
 <script type="text/javascript" src="../packages/javascript.fullPage.js"></script>
 <script>
-fullpage.initialize('#fullpage', {});
+fullpage.initialize('#fullpage', {
+	anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+  onLeave: function(index, nextIndex){
+
+		//after leaving section 2
+		if(index == 2){
+			close_read_more2();
+		}
+    if(index == 3){
+      close_read_more3();
+    }
+	}
+});
 </script>
