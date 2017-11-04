@@ -82,8 +82,7 @@
 <script>
 fullpage.initialize('#fullpage', {
 	anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-  onLeave: function(index, nextIndex){
-
+  onLeave: function(index){
 		//after leaving section 2
 		if(index == 2){
 			close_read_more2();
