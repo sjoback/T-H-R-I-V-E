@@ -26,13 +26,7 @@ body{
   font-size: 26px;
   margin: 1px;
 }
-@media screen and (max-width: 500px){
-  .big-text{
-    font-size: 35px;
-    margin: 1px;
-    color: white;
-  }
-}
+
 .section1{
   background-image: url('../resources/webPage1.png');
   transition: 0.5s;
@@ -49,9 +43,6 @@ body{
 .section1-logo{
   width: 200px;
   margin-bottom: 10px;
-}
-.scroll-icon{
-
 }
 .scroll-icon span {
   position: absolute;
@@ -241,4 +232,20 @@ body{
 }
 .section4{
   background-image: url('../resources/Website_04_slide01UT.png');
+}
+@media screen and (max-width: 500px){
+  .big-text{
+    font-size: 35px;
+    margin: 1px;
+    color: white;
+  }
+  .section1{
+    background-image: url("../resources/mobPage1.png");
+  }
+  .section2{
+    background-image: url("../resources/mobPage2.png");
+  }
+  .section3{
+    background-image: url("../resources/mobPage3.png");
+  }
 }
