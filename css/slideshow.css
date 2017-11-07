@@ -89,12 +89,17 @@
   and (min-device-width: 768px)
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
-     #slide1 {
-    background-image: url("resources/slide1.png");
-    height: 100%;
-    max-height: 100%;
-    width: 2000px;
-    max-width: 1000px;
-    background-size: fill;
-    }
+     @media only screen and (max-width: 500px) {
+       #slide1 {
+       background-image: url("resources/mobile1.png");
+       }
+       #slide2 {
+       background-image: url("resources/mobile2.png");
+       }
+       #slide3 {
+       background-image: url("resources/mobile3.png");
+       }
+       #slide4 {
+       background-image: url("resources/mobile4.png");
+       }
 }
