@@ -10,7 +10,7 @@ next.fadeIn(speed);
 }
 
 $(function () {
-setInterval(Divs, 1000);
+setInterval(Divs, 9000);
 });
 
 
@@ -64,5 +64,5 @@ $(document).ready(function(){ //wait until page is fully loaded
 		}
 		setCircle(slide_number);
 
-	}, 1000);
+	}, 9100);
 });
