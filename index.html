@@ -5,6 +5,15 @@
   <title>T H R I V E</title>
   <link rel="icon" type="image/gif/png" href="resources/triangle.png">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+   <!-- SLIDESHOW -->
+  <script src="js/slideshow.js"></script>
+  <link rel="stylesheet" href="css/slideshow.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <script src='functions/functions.js'></script>
 </head>
@@ -62,7 +71,36 @@
         <a href="javascript:void(0)" class="s3-closebtn" onclick="close_read_more3()"></a>
       </div>
     </div>
+
+
     <div class="section section4">
+      <!-- SLIDESHOW -->
+      <div id="container">
+        <ul id="slides">
+          <li class="slide">
+            <div class="slide-partial slide-left"><div class="leftone"></div></div>
+            <div class="slide-partial slide-right"><div class="rightone"></div></div>
+          </li>
+          <li class="slide">
+            <div class="slide-partial slide-left"><div class="lefttwo"></div></div>
+            <div class="slide-partial slide-right"><div class="righttwo"></div></div>
+          </li>
+          <li class="slide">
+            <div class="slide-partial slide-left"><div class="leftthree"></div></div>
+            <div class="slide-partial slide-right"><div class="rightthree"></div></div>
+          </li>
+          <li class="slide">
+            <div class="slide-partial slide-left"><div class="leftfour"></div></div>
+            <div class="slide-partial slide-right"><div class="rightfour"></div></div>
+          </li>
+        </ul>
+        <ul id="slide-select">
+          <li class="selector"></li>
+          <li class="selector"></li>
+          <li class="selector"></li>
+          <li class="selector"></li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
