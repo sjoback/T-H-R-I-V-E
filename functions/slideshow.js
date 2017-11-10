@@ -11,7 +11,11 @@ function Divs() {
 }
 
 $(function () {
+<<<<<<< HEAD
   setInterval(Divs, 5000);
+=======
+setInterval(Divs, 9000);
+>>>>>>> 6350aec21f7fdbcd58b56a02f71215462f988d21
 });
 
 
@@ -65,5 +69,9 @@ $(document).ready(function(){ //wait until page is fully loaded
     }
     setCircle(slide_number);
 
+<<<<<<< HEAD
   }, 5000);
+=======
+	}, 9100);
+>>>>>>> 6350aec21f7fdbcd58b56a02f71215462f988d21
 });
