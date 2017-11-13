@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>T H R I V E</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/gif/png" href="resources/triangle.png">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -29,7 +30,7 @@
       <div class="scroll-icon"><span></span></div>
     </div>
     <div id="section2-id" class="section section2">
-      <div id="s2-shade-layer-id" class="s2-shade-layer"></div>
+      <div id="s2-shade-layer-id" class="s2-shade-layer"></div> <!--An invisible layer that will be visible when read_more two is open-->
       <div id="section2-textbox-id" class="section2-textbox">
         <p class="little-text">HOS THRIVE ÄR ALLA VINNARE.</p>
         <p class="big-text"><span>RESPEKTFULL MODE</span></p>
@@ -50,7 +51,7 @@
       </div>
     </div>
     <div id="section3-id" class="section section3">
-      <div id="s3-shade-layer-id" class="s3-shade-layer"></div>
+      <div id="s3-shade-layer-id" class="s3-shade-layer"></div> <!--An invisible layer that will be visible when read_more three is open-->
       <div id="section3-textbox-id" class="section3-textbox">
         <p class="little-text">INGA IDEAL.</p>
         <p class="big-text"><span>JÄMNSTÄLLT MODE</span></p>
@@ -114,6 +115,7 @@
 fullpage.initialize('#fullpage', {
   anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
   fitToSection: true,
+  //onLeave makes the readmoreBoxes close when you leave set page
   onLeave: function(index){
     //after leaving section 2
     if(index == 2){
