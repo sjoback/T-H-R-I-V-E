@@ -1,17 +1,13 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>T H R I V E</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
   <link rel="icon" type="image/gif/png" href="resources/triangle.png">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
-   <!-- SLIDESHOW -->
-  <link rel="stylesheet" type="text/css" href="css/slideshow.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script type="text/javascript" src="functions/slideshow.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="css/slideStyle.css">
+  <link rel="stylesheet" type="text/css" href="css/mediaQ.css">
 
 
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
@@ -72,33 +68,44 @@
       </div>
     </div>
 
-
     <div class="section section4">
-      <!-- SLIDESHOW -->
-      <div id="parent">
-         <div id="slide1"></div>
-         <div id="slide2"></div>
-         <div id="slide3"></div>
-         <div id="slide4"></div>
+      <div onclick="manual_play()">
+        <div class="slides showing"></div>
+        <div class="slides"></div>
+        <div class="slides"></div>
+        <div class="slides"></div>
       </div>
-      <!-- INDICATORS -->
-      <div id="indicator">
-         <div id="circle1" class="circle"></div>
-         <div id="circle2" class="circle"></div>
-         <div id="circle3" class="circle"></div>
-         <div id="circle4" class="circle"></div>
+
+      <div class="Indicators">
+        <div onclick="jump_to_slide(0)" id="circle1" class="circle"></div>
+        <div onclick="jump_to_slide(1)" id="circle2" class="circle"></div>
+        <div onclick="jump_to_slide(2)" id="circle3" class="circle"></div>
+        <div onclick="jump_to_slide(3)" id="circle4" class="circle"></div>
       </div>
+
+      <div onclick="manual_play()" id="play-pause" class="showplay"></div>
+
+      <script type="text/javascript">
+      var slides = document.querySelectorAll('.slides');
+      var currentSlide = 0;
+      set_circles(currentSlide);
+      var slideInterval = setInterval(nextSlide,4000);
+      var playing = true;
+      var pauseButton = document.getElementById('pause');
+      var next = document.getElementById('next');
+      var previous = document.getElementById('previous');
+      </script>
     </div>
   </div>
 
-   <div class="section section5">
-      <!-- SOCIAL MEDIA BUTTONS -->
-     <!-- <div class="media-buttons">
-        <a href="https://www.facebook.com/thrivestore.se" target ="_blank"><img src="resources/facebook.svg"></a>
-        <a href="https://www.instagram.com/thrivestore.se" target ="_blank"><img src="resources/instagram.svg"></a>
-        <a href="https://www.youtube.com/channel/UCwyzo2XinM0b1VSMpbMGY3w" target="_blank"><img src="resources/youtube.svg"></a>
-    </div> -->
-   </div>
+  <div class="section section5">
+    <!-- SOCIAL MEDIA BUTTONS -->
+    <!-- <div class="media-buttons">
+    <a href="https://www.facebook.com/thrivestore.se" target ="_blank"><img src="resources/facebook.svg"></a>
+    <a href="https://www.instagram.com/thrivestore.se" target ="_blank"><img src="resources/instagram.svg"></a>
+    <a href="https://www.youtube.com/channel/UCwyzo2XinM0b1VSMpbMGY3w" target="_blank"><img src="resources/youtube.svg"></a>
+  </div> -->
+</div>
 
 
 </body>

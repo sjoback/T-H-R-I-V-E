@@ -40,10 +40,83 @@ function open_read_more3() {
   }
 }
 function close_read_more3() {
+
   document.getElementById("s3-readMore-id").style.width = "0";
   document.getElementById("s3-readMore-id").style.opacity = "0";
   document.getElementById("section3-id").style.marginLeft= "0";
   document.getElementById("s3-shade-layer-id").style.opacity = "0";
-      document.getElementById("section3-id").style.marginRight = "0";
-  document.getElementById("section3-textbox-id").style.left = "66%";
+  document.getElementById("section3-id").style.marginRight = "0";
+  if (window.innerWidth > 500) {
+    document.getElementById("section3-textbox-id").style.left = "66%";
+  }
+  else {
+    document.getElementById("section3-textbox-id").style.left = "15%";
+  }
+}
+
+function manual_play(){
+  if (playing === false) {
+    document.getElementById("play-pause").classList.remove("pause");
+    document.getElementById("play-pause").classList.add("play");
+
+    playSlideshow();
+    setTimeout(function() {
+      document.getElementById("play-pause").classList.remove("play");
+      document.getElementById("play-pause").classList.add("showplay");
+    }, 2000);
+    nextSlide();
+  }
+  else if (playing === true) {
+    document.getElementById("play-pause").classList.add("pause");
+    document.getElementById("play-pause").classList.remove("showplay");
+    pauseSlideshow();
+  }
+}
+function playSlideshow() {
+  playing = true;
+  slideInterval = setInterval(nextSlide,4000);
+}
+function pauseSlideshow() {
+  playing = false;
+  clearInterval(slideInterval);
+}
+function nextSlide() {
+  goToSlide(currentSlide+1);
+}
+function goToSlide(n) {
+  slides[currentSlide].className = 'slides';
+  currentSlide = (n+slides.length)%slides.length;
+  slides[currentSlide].className = 'slides showing';
+  set_circles(currentSlide);
+}
+function jump_to_slide(n){
+  document.getElementById("play-pause").classList.add("pause");
+  document.getElementById("play-pause").classList.remove("showplay");
+  pauseSlideshow();
+  goToSlide(n);
+}
+function set_circles(n){
+  reset_circles();
+  switch (n) {
+    case 0:
+    document.getElementById("circle1").style.background = "black";
+    break;
+    case 1:
+    document.getElementById("circle2").style.background = "black";
+    break;
+    case 2:
+    document.getElementById("circle3").style.background = "black";
+    break;
+    case 3:
+    document.getElementById("circle4").style.background = "black";
+    break;
+    default:
+    reset_circles();
+  }
+}
+function reset_circles(){
+  document.getElementById("circle1").style.background = "transparent";
+  document.getElementById("circle2").style.background = "transparent";
+  document.getElementById("circle3").style.background = "transparent";
+  document.getElementById("circle4").style.background = "transparent";
 }
