@@ -1,0 +1,87 @@
+@media only screen and (max-width: 500px){
+  /*General styling*/
+  .big-text{
+    font-size: 20px;
+    margin: 1px;
+    color: white;
+  }
+  .little-text{
+    color: black;
+    font-size: 15px;
+    margin: 1px;
+  }
+  /*Section one styling*/
+  .section1{
+    background-image: url("../resources/mobPage1.png");
+  }
+  .section1-logo{
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .section1-textbox{
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    margin-right: -50%;
+    text-align: center;
+  }
+  /*Section two styling*/
+  .section2{
+    background-image: url("../resources/mobPage2.png");
+  }
+  .s2-readMore {
+    background-image: url("../resources/readMore2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+  }
+  .s2-readMore p {
+    font-size: 15px;
+    padding: 0% 5% 5% 5%;
+    text-align: center;
+    line-height: 100%;
+  }
+  .section2-button{
+    font-size: 15px;
+    transition: 1s;
+    width: 60px;
+    border-top: 21px solid rgba(0, 0, 0, 0.8);
+    border-left: 20px solid transparent;
+  }
+  .section2-button span{
+    top: -20px;
+  }
+  /*Section three styling*/
+  .section3{
+    background-image: url("../resources/mobPage3.png");
+  }
+  .section3-textbox{
+    left: 15%;
+    top: 238%;
+  }
+  .section3-button{
+    font-size: 15px;
+    transition: 1s;
+    width: 60px;
+    border-top: 21px solid rgba(0, 0, 0, 0.8);
+    border-left: 20px solid transparent;
+  }
+  .section3-button span{
+    position: absolute;
+    top: -20px;
+  }
+  .s3-readMore p {
+    font-size: 15px;
+    padding: 0% 5% 5% 5%;
+    text-align: center;
+    line-height: 100%;
+  }
+  .s3-readMore {
+    background-image: url("../resources/readMore3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+  }
+}
