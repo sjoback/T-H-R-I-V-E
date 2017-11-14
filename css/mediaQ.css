@@ -43,15 +43,15 @@
     text-align: center;
     line-height: 100%;
   }
-  .section2-button{
-    font-size: 15px;
+  .section2-button, .section3-button {
+    font-size: 24px;
     transition: 1s;
-    width: 60px;
-    border-top: 21px solid rgba(0, 0, 0, 0.8);
-    border-left: 20px solid transparent;
+    width: 100px;
+    border-top: 33px solid rgba(0, 0, 0, 0.8);
+    border-left: 30px solid transparent;
   }
   .section2-button span{
-    top: -20px;
+    top: -33px;
   }
   /*Section three styling*/
   .section3{
@@ -61,16 +61,10 @@
     left: 15%;
     top: 238%;
   }
-  .section3-button{
-    font-size: 15px;
-    transition: 1s;
-    width: 60px;
-    border-top: 21px solid rgba(0, 0, 0, 0.8);
-    border-left: 20px solid transparent;
-  }
+
   .section3-button span{
     position: absolute;
-    top: -20px;
+    top: -33px;
   }
   .s3-readMore p {
     font-size: 15px;

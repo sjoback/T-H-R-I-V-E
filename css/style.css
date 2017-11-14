@@ -23,8 +23,9 @@ body{
 }
 .little-text{
   color: black;
-  font-size: 26px;
+  font-size: 32px;
   margin: 1px;
+  margin-bottom: 5px;
 }
 .section1{
   background-image: url('../resources/webPage1.png');
@@ -232,4 +233,6 @@ body{
 
 .section5 {
    background-image: url("../resources/web/5text.png");
+
+
 }
