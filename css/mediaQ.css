@@ -10,6 +10,9 @@
     font-size: 15px;
     margin: 1px;
   }
+  .section{
+    height: 100vh;
+  }
   /*Section one styling*/
   .section1{
     background-image: url("../resources/mobPage1.png");
