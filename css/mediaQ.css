@@ -11,6 +11,9 @@
     margin: 1px;
     margin-bottom: 5px;
   }
+  .section{
+    height: 100vh;
+  }
   /*Section one styling*/
   .section1{
     background-image: url("../resources/mobPage1.png");
