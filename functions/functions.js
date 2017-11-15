@@ -120,8 +120,3 @@ function reset_circles(){
   document.getElementById("circle3").style.background = "transparent";
   document.getElementById("circle4").style.background = "transparent";
 }
-// function get_proper_height(){
-//   if
-//   var propHeight = window.innerWidth;
-//   document.getElementByClassName("section").style.height = propHeight;
-// }
