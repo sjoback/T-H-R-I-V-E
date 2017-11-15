@@ -3,7 +3,7 @@ body{
   margin: 0;
 }
 .section{
-  height: 100vh;
+  height: 100%;
   width: auto;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@ body{
 }
 .scroll-icon span {
   position: absolute;
-  top: 85vh;
+  top: 85%;
   left: 50%;
   width: 40px;
   height: 40px;
@@ -98,9 +98,11 @@ body{
   position: absolute;
   top: -36px;
 }
-.section2-button:hover{
-  border-top: 40px solid transparent;
-  color: black;
+@media only screen and (min-width: 500px){
+  .section2-button:hover{
+    border-top: 40px solid transparent;
+    color: black;
+  }
 }
 .thrivestore-link{
   font-size: 15px;
@@ -124,19 +126,20 @@ body{
 .s2-readMore p {
   font-size: 20px;
   padding: 0% 5% 5% 5%;
-  text-align: center;
+  text-align: left;
   line-height: 150%;
 }
 .s2-readMore h2 {
-  padding: 0% 5% 10% 5%;
-  text-align: center;
+  padding: 0% 5% 5% 5%;
+  text-align: left;
+  align-self: left;
 }
 .s2-readMore {
-  height: 100vh;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 100vh;
+  top: 100%;
   left: 0;
   overflow-x: hidden;
   transition: opacity 2s;
@@ -148,7 +151,7 @@ body{
   opacity: 0;
 }
 .s2-shade-layer{
-  height: 100vh;
+  height: 100%;
   width: auto;
   opacity: 0;
   background-color: black;
@@ -183,9 +186,11 @@ body{
   position: absolute;
   top: -36px;
 }
-.section3-button:hover{
-  border-top: 40px solid transparent;
-  color: black;
+@media only screen and (min-width: 500px){
+  .section3-button:hover{
+    border-top: 40px solid transparent;
+    color: black;
+  }
 }
 .s3-readMore p {
   font-size: 20px;
@@ -198,11 +203,11 @@ body{
   text-align: center;
 }
 .s3-readMore {
-  height: 100vh;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 200vh;
+  top: 200%;
   left: 0;
   overflow-x: hidden;
   transition: opacity 2s;
@@ -214,7 +219,7 @@ body{
   opacity: 0;
 }
 .s3-shade-layer{
-  height: 100vh;
+  height: 100%;
   width: auto;
   opacity: 0;
   background-color: black;
@@ -230,7 +235,5 @@ body{
 }
 
 .section5 {
-   background-image: url("../resources/web/5text.png");
-
-
+  background-image: url("../resources/web/5text.png");
 }

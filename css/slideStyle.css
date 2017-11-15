@@ -5,8 +5,8 @@
   background-size: 100% 100%;
   position: absolute;
   left: 0px;
-  top: 300vh;
-  height: 100vh;
+  top: 300%;
+  height: 100%;
   width: 100%;
   opacity: 0;
   z-index: 1;
@@ -15,9 +15,9 @@
   -o-transition: linear 1s;
   transition: linear 1s;
 }
-.Indicators{
+.indicators{
   position: absolute;
-  top: 387vh;
+  top: 387%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -67,7 +67,7 @@
 }
 .pause{
   position: absolute;
-  top:392vh;
+  top:392%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -82,7 +82,7 @@
 }
 .play{
   position: absolute;
-  top:392vh;
+  top:392%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
