@@ -1,5 +1,16 @@
 @media only screen and (max-width: 500px){
   /*General styling*/
+ .media-buttons {
+    position: relative;
+    top: 73%;
+    left: 7.5%;
+}
+.media-buttons img {
+   width: 60px;
+   height: 60px;
+   border-radius: 15%;
+   margin: 5px;
+}
   .big-text{
     font-size: 26px;
     margin: 1px;
@@ -15,17 +26,34 @@
   .section{
     height: 100vh;
   }
-  .thrivestore-link {
-     position: absolute;
-     top: 80%;
-     font-size: 20px;
-     height: 30px;
-     width: 200px;
+  .thrivestore-link{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 17px 15px 17px 15px;
+    background: black;
+    vertical-align: middle;
+    margin-top: 10px;
+    position: absolute;
+    top: 75%;
+  }
+  .thrivestore-link3{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 17px 15px 17px 15px;
+    background: black;
+    vertical-align: middle;
+    margin-top: 10px;
+    position: absolute;
+    top: 75%;
+  }
 
- }
  .s2-closebtn, .s3-closebtn {
    position: absolute;
-   top: 90%;
+   top: 85%;
    width: 45px;
    height: 45px;
 }
