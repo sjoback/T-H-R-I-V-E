@@ -161,14 +161,11 @@ body{
   line-height: 150%;
 }
 .s2-readMore h2 {
-<<<<<<< HEAD
   padding: 0% 5% 10% 5%;
   text-align: left;
-=======
   padding: 0% 5% 5% 5%;
   text-align: left;
   align-self: left;
->>>>>>> efb7674ca568aeecfadd259b115a8749e3c4f2c0
 }
 .s2-readMore {
   height: 100%;
@@ -203,7 +200,6 @@ body{
   left: 66%;
   top: 230%;
   text-align: left;
-  transition: 0.5s;
 }
 .section3-button{
   cursor: pointer;
@@ -272,9 +268,5 @@ body{
 }
 
 .section5 {
-<<<<<<< HEAD
    background-image: url("../resources/web/5text.png");
-=======
-  background-image: url("../resources/web/5text.png");
->>>>>>> efb7674ca568aeecfadd259b115a8749e3c4f2c0
 }
