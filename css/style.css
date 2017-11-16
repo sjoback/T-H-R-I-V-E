@@ -124,15 +124,26 @@ body{
     color: black;
   }
 }
-.thrivestore-link{
+.thrivestore-link2{
   font-size: 18px;
   text-align: center;
   text-decoration: none;
   color: white;
-  padding: 5px 5px 5px 5px;
+  padding: 13px 10px 13px 10px;
   background: black;
   vertical-align: middle;
   margin-top: 20%;
+  margin-bottom: 10%;
+}
+.thrivestore-link3{
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 13px 10px 13px 10px;
+  background: black;
+  vertical-align: middle;
+  margin-top: 15%;
   margin-bottom: 10%;
 }
 .s2-closebtn {
@@ -140,11 +151,11 @@ body{
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: block;
   border-radius: 50%;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 .s2-readMore p {
   font-size: 20px;
@@ -229,6 +240,7 @@ body{
   padding: 0% 5% 10% 5%;
   text-align: left;
   align-self: left;
+  margin-top: 50px;
 }
 .s3-readMore {
   height: 100%;
@@ -260,11 +272,11 @@ body{
   background-image: url("../resources/closeBtn.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: block;
   border-radius: 50%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .section5 {

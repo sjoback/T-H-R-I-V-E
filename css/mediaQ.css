@@ -26,7 +26,7 @@
   .section{
     height: 100%;
   }
-  .thrivestore-link{
+  .thrivestore-link2{
     font-size: 15px;
     text-align: center;
     text-decoration: none;
@@ -35,8 +35,6 @@
     background: black;
     vertical-align: middle;
     margin-top: 10px;
-    position: absolute;
-    top: 75%;
   }
   .thrivestore-link3{
     font-size: 15px;
@@ -46,29 +44,26 @@
     padding: 17px 15px 17px 15px;
     background: black;
     vertical-align: middle;
-    margin-top: 10px;
-    position: absolute;
-    top: 75%;
+    margin-top: -30px;
   }
 
- .s2-closebtn, .s3-closebtn {
-   position: absolute;
-   top: 85%;
+.s2-closebtn {
    width: 45px;
    height: 45px;
+   margin-bottom: -220px;
+}
+ .s3-closebtn {
+   width: 45px;
+   height: 45px;
+   margin-bottom: -120px;
 }
   .thrivestore-link {
-    position: absolute;
+    position: relative;
     top: 80%;
     font-size: 15px;
     width: 150px;
     padding: 5px 5px 5px 5px;
-  }
-  .s2-closebtn, .s3-closebtn {
-    position: absolute;
-    top: 90%;
-    width: 20px;
-    height: 20px;
+    margin-top: 1000px;
   }
 
   /*Section one styling*/
@@ -106,12 +101,12 @@
     padding: 0% 5% 5% 5%;
     text-align: left;
     line-height: 100%;
+    margin-bottom: 50px;
   }
   .s2-readMore h2 {
     text-align: left;
     font-size: 30px;
-    margin-bottom: -20px;
-    margin-top: -130px;
+    margin-top: -200px;
     margin-right: 80px;
   }
   .section2-button, .section3-button {
@@ -142,6 +137,7 @@
     padding: 0% 5% 5% 5%;
     text-align: left;
     line-height: 100%;
+    /*margin-bottom: -20px;*/
   }
   .s3-readMore h2 {
     text-align: left;
