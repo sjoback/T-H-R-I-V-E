@@ -448,7 +448,7 @@
     }
 
     function getWindowHeight(){
-        return  'innerHeight' in window ? window.innerHeight : document.documentElement.offsetHeight;
+        return  'innerHeight' in window ? window.innerHeight : document.documentElement.clientHeight;
     }
 
     function clone(obj) {

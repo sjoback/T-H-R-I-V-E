@@ -23,7 +23,7 @@
         <p class="big-text"><span>CONSCIOUS</span></p>
         <p class="big-text"><span>FASHION</span></p>
       </div>
-      <div class="scroll-icon"><span></span></div>
+      <div class="scroll-icon scroll-icon1"><span></span></div>
     </div>
     <div id="section2-id" class="section section2">
       <div id="s2-shade-layer-id" class="s2-shade-layer"></div> <!--An invisible layer that will be visible when read_more two is open-->
@@ -45,6 +45,7 @@
         <a href="http://www.thrivestore.se" target="_blank" class="thrivestore-link">Besök Thrivestore.se</a>
         <a href="javascript:void(0)" class="s2-closebtn" onclick="close_read_more2()"></a>
       </div>
+      <div class="scroll-icon scroll-icon2"><span></span></div>
     </div>
     <div id="section3-id" class="section section3">
       <div id="s3-shade-layer-id" class="s3-shade-layer"></div> <!--An invisible layer that will be visible when read_more three is open-->
@@ -57,7 +58,7 @@
       <div id="s3-readMore-id" class="s3-readMore">
         <h2>BESÖK OSS I GÖTEBORG!</h2>
         <p>
-           Om du befinner dig i Göteborg se till att besöka T H R I V E – Skandinaviens ledande
+          Om du befinner dig i Göteborg se till att besöka T H R I V E – Skandinaviens ledande
           konceptbutik inom ekologiskt, rättvist och hållbart mode.
           <br>
           <br>
@@ -70,10 +71,16 @@
           <br>
           Där kan du smidigt se vad som finns
           i lager och klicka hem det.
+<<<<<<< HEAD
        </p>
        <a href="http://www.thrivestore.se" target="_blank" class="thrivestore-link3">Besök Thrivestore.se</a>
+=======
+        </p>
+        <a href="http://www.thrivestore.se" class="thrivestore-link">Besök Thrivestore.se</a>
+>>>>>>> efb7674ca568aeecfadd259b115a8749e3c4f2c0
         <a href="javascript:void(0)" class="s3-closebtn" onclick="close_read_more3()"></a>
       </div>
+      <div class="scroll-icon scroll-icon3"><span></span></div>
     </div>
 
     <div class="section section4">
@@ -84,7 +91,7 @@
         <div class="slides"></div>
       </div>
 
-      <div class="Indicators">
+      <div class="indicators">
         <div onclick="jump_to_slide(0)" id="circle1" class="circle"></div>
         <div onclick="jump_to_slide(1)" id="circle2" class="circle"></div>
         <div onclick="jump_to_slide(2)" id="circle3" class="circle"></div>
@@ -106,6 +113,7 @@
     </div>
 
 
+<<<<<<< HEAD
 <div id="section5-id" class="section section5">
     <!-- SOCIAL MEDIA BUTTONS -->
    <div class="media-buttons">
@@ -116,6 +124,18 @@
 </div>
 
 
+=======
+    <div id="section5-id" class="section section5">
+      <!-- SOCIAL MEDIA BUTTONS -->
+      <!-- <div class="media-buttons">
+      <a href="https://www.facebook.com/thrivestore.se" target ="_blank"><img src="resources/facebook.svg"></a>
+      <a href="https://www.instagram.com/thrivestore.se" target ="_blank"><img src="resources/instagram.svg"></a>
+      <a href="https://www.youtube.com/channel/UCwyzo2XinM0b1VSMpbMGY3w" target="_blank"><img src="resources/youtube.svg"></a>
+    </div> -->
+    </div>
+
+  </div>
+>>>>>>> efb7674ca568aeecfadd259b115a8749e3c4f2c0
 </body>
 </html>
 
@@ -127,6 +147,11 @@
 fullpage.initialize('#fullpage', {
   anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
   fitToSection: true,
+  scrollOverflow: true,
+  offsetSections: false,
+  navigationPosition: 'right',
+  fadingEffect: true,
+  scrollbar: true,
   //onLeave makes the readmoreBoxes close when you leave set page
   onLeave: function(index){
     //after leaving section 2

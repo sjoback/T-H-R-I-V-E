@@ -12,20 +12,21 @@
    margin: 5px;
 }
   .big-text{
-    font-size: 26px;
+    font-size: 25px;
     margin: 1px;
     color: white;
   }
   .little-text{
     color: black;
-    font-size: 30px;
+    font-size: 22px;
     margin: 1px;
     margin-bottom: 5px;
     margin-right: 100px;
   }
   .section{
-    height: 100vh;
+    height: 100%;
   }
+<<<<<<< HEAD
   .thrivestore-link{
     font-size: 15px;
     text-align: center;
@@ -57,6 +58,21 @@
    width: 45px;
    height: 45px;
 }
+=======
+  .thrivestore-link {
+    position: absolute;
+    top: 80%;
+    font-size: 15px;
+    width: 150px;
+    padding: 5px 5px 5px 5px;
+  }
+  .s2-closebtn, .s3-closebtn {
+    position: absolute;
+    top: 90%;
+    width: 20px;
+    height: 20px;
+  }
+>>>>>>> efb7674ca568aeecfadd259b115a8749e3c4f2c0
 
   /*Section one styling*/
   .section1{
@@ -64,7 +80,7 @@
   }
   .section1-logo{
     width: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .section1-textbox{
     position: absolute;
@@ -77,28 +93,30 @@
   .section2{
     background-image: url("../resources/mobPage2.png");
   }
+  .section2-textbox{
+    transition: none;
+    left: 6%;
+    top: 125%;
+  }
   .s2-readMore {
     background-image: url("../resources/readMore2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: scroll;
   }
   .s2-readMore p {
     font-size: 18px;
     padding: 0% 5% 5% 5%;
     text-align: left;
-    line-height: 120%;
-    /*margin-bottom: 100px;*/
+    line-height: 100%;
   }
-
   .s2-readMore h2 {
-     text-align: left;
-     font-size: 30px;
-     margin-bottom: -20px;
-     margin-top: -130px;
-     margin-right: 80px;
- }
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: -20px;
+    margin-top: -130px;
+    margin-right: 80px;
+  }
   .section2-button, .section3-button {
     font-size: 24px;
     transition: 1s;
@@ -114,10 +132,10 @@
     background-image: url("../resources/mobPage3.png");
   }
   .section3-textbox{
-    left: 15%;
-    top: 238%;
+    left: 6%;
+    top: 235%;
+    transition: none;
   }
-
   .section3-button span{
     position: absolute;
     top: -33px;
@@ -126,24 +144,21 @@
     font-size: 18px;
     padding: 0% 5% 5% 5%;
     text-align: left;
-    line-height: 120%;
-    /*margin-bottom: 100px;*/
+    line-height: 100%;
   }
   .s3-readMore h2 {
-     text-align: left;
-     font-size: 30px;
-     margin-bottom: -20px;
-     margin-top: -80px;
-     margin-right: 80px;
-}
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: -20px;
+    margin-top: -130px;
+    margin-right: 80px;
+  }
   .s3-readMore {
     background-image: url("../resources/readMore3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: scroll;
   }
-
   .section5{
     background-image: url("../resources/mobile/5text.png");
   }
