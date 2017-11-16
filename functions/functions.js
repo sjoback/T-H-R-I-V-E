@@ -50,7 +50,7 @@ function close_read_more3() {
     document.getElementById("section3-textbox-id").style.left = "66%";
   }
   else {
-    document.getElementById("section3-textbox-id").style.left = "15%";
+    document.getElementById("section3-textbox-id").style.left = "6%";
   }
 }
 

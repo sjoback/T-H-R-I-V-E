@@ -44,7 +44,6 @@ body{
 }
 .scroll-icon span {
   position: absolute;
-  top: 85%;
   left: 50%;
   width: 40px;
   height: 40px;
@@ -56,6 +55,15 @@ body{
   -webkit-animation: scrollDown 5s infinite;
   animation: scrollDown 5s infinite;
   box-sizing: border-box;
+}
+.scroll-icon1 span{
+  top: 85%;
+}
+.scroll-icon2 span{
+  top: 185%;
+}
+.scroll-icon3 span{
+  top: 285%;
 }
 @-webkit-keyframes scrollDown {
   0% {
@@ -157,7 +165,6 @@ body{
   background-color: black;
   transition: 0.5s, transform 5s;
 }
-
 .section3{
   background-image: url('../resources/webPage3.png');
   transition: 0.5s;

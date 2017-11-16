@@ -7,7 +7,7 @@
   }
   .little-text{
     color: black;
-    font-size: 28px;
+    font-size: 22px;
     margin: 1px;
     margin-bottom: 5px;
     margin-right: 100px;
@@ -35,7 +35,7 @@
   }
   .section1-logo{
     width: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .section1-textbox{
     position: absolute;
@@ -47,6 +47,11 @@
   /*Section two styling*/
   .section2{
     background-image: url("../resources/mobPage2.png");
+  }
+  .section2-textbox{
+    transition: none;
+    left: 6%;
+    top: 125%;
   }
   .s2-readMore {
     background-image: url("../resources/readMore2.png");
@@ -82,8 +87,9 @@
     background-image: url("../resources/mobPage3.png");
   }
   .section3-textbox{
-    left: 15%;
-    top: 238%;
+    left: 6%;
+    top: 235%;
+    transition: none;
   }
   .section3-button span{
     position: absolute;
@@ -108,7 +114,6 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .section5{
     background-image: url("../resources/mobile/5text.png");
   }
