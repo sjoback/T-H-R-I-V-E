@@ -31,10 +31,10 @@
     text-align: center;
     text-decoration: none;
     color: white;
-    padding: 5px 5px 5px 5px;
+    padding: 15px 10px 15px 10px;
     background: black;
     vertical-align: middle;
-    margin-top: 0%;
+    margin-top: 10%;
     margin-bottom: 5%;
   }
   .thrivestore-link3{
@@ -42,20 +42,20 @@
     text-align: center;
     text-decoration: none;
     color: white;
-    padding: 5px 5px 5px 5px;
+    padding: 15px 10px 15px 10px;
     background: black;
     vertical-align: middle;
     margin-top: 0%;
     margin-bottom: 5%;
   }
 .s2-closebtn {
-   width: 25px;
-   height: 25px;
-   margin-bottom: 5%;
+   width: 45px;
+   height: 45px;
+   margin-bottom: -10%;
 }
  .s3-closebtn {
-   width: 25px;
-   height: 25px;
+   width: 50px;
+   height: 50px;
    margin-bottom: 5%;
 }
   /*Section one styling*/
@@ -92,7 +92,7 @@
     font-size: 18px;
     padding: 0% 5% 0% 5%;
     text-align: left;
-    line-height: 100%;
+    line-height: 170%;
   }
   .s2-readMore h2 {
     margin-top: -5%;
@@ -126,7 +126,7 @@
     font-size: 18px;
     padding: 0% 5% 0% 5%;
     text-align: left;
-    line-height: 100%;
+    line-height: 150%;
   }
   .s3-readMore h2 {
     text-align: left;
