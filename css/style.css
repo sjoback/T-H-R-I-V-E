@@ -172,11 +172,11 @@ body{
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 100%;
   left: 0;
+  transition: opacity 0.5s;
   overflow-x: hidden;
-  transition: opacity 2s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,6 +193,7 @@ body{
   opacity: 0;
   background-color: black;
   transition: 0.5s, transform 5s;
+
 }
 .section3{
   background-image: url('../resources/webPage3.png');
@@ -243,11 +244,11 @@ body{
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 200%;
   left: 0;
   overflow-x: hidden;
-  transition: opacity 2s;
+  transition: opacity 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
