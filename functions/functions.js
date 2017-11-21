@@ -11,7 +11,6 @@ function open_read_more2() {
     document.getElementById("s2-readMore-id").style.opacity = "1";      //Makes readmoreBox more smothly visible
     document.getElementById("section2-id").style.marginLeft = "30%";    //Section2 screen makes room for readmoreBox
     document.getElementById("section2-id").style.marginRight = "-30%";  //Makes 30% of the section2 screen go outside on the right side
-    document.getElementById("section2-textbox-id").style.left = "36%";  //Makes section2 texbox move 36% to the right
     document.getElementById("s2-shade-layer-id").style.opacity = "0.7"; //Makes ovralaying black background 70% visible
   }
 
@@ -37,6 +36,7 @@ function open_read_more3() {
     document.getElementById("section3-id").style.marginLeft = "30%";
     document.getElementById("section3-id").style.marginRight = "-30%";
     document.getElementById("s3-shade-layer-id").style.opacity = "0.7";
+    document.getElementById("section3-textbox-id").style.marginLeft = "-33%";
   }
 }
 function close_read_more3() {
@@ -46,6 +46,7 @@ function close_read_more3() {
   document.getElementById("section3-id").style.marginLeft= "0";
   document.getElementById("s3-shade-layer-id").style.opacity = "0";
   document.getElementById("section3-id").style.marginRight = "0";
+  document.getElementById("section3-textbox-id").style.marginLeft = "0";
   if (window.innerWidth > 500) {
     document.getElementById("section3-textbox-id").style.left = "66%";
   }

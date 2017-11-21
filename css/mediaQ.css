@@ -80,7 +80,7 @@
   .section2-textbox{
     transition: none;
     left: 6%;
-    top: 125%;
+    top: 25%;
   }
   .s2-readMore {
     background-image: url("../resources/readMore2.png");
@@ -115,7 +115,7 @@
   }
   .section3-textbox{
     left: 6%;
-    top: 235%;
+    top: 35%;
     transition: none;
   }
   .section3-button span{

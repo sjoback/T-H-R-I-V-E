@@ -4,7 +4,7 @@ body{
 }
 
 .media-buttons {
-   position: relative;
+   position: absolute;
    top: 50%;
    left: 16%;
 }
@@ -97,7 +97,7 @@ body{
 .section2-textbox{
   position: absolute;
   left: 6%;
-  top: 130%;
+  top: 30%;
   text-align: left;
   transition: 0.5s;
 }
@@ -201,8 +201,9 @@ body{
 .section3-textbox{
   position: absolute;
   left: 66%;
-  top: 230%;
+  top: 30%;
   text-align: left;
+  transition: 0.5s;
 }
 .section3-button{
   cursor: pointer;

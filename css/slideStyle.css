@@ -5,7 +5,7 @@
   background-size: 100% 100%;
   position: absolute;
   left: 0px;
-  top: 300%;
+  top: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -17,7 +17,7 @@
 }
 .indicators{
   position: absolute;
-  top: 387%;
+  top: 87%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -67,7 +67,7 @@
 }
 .pause{
   position: absolute;
-  top:392%;
+  top: 92%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -82,7 +82,7 @@
 }
 .play{
   position: absolute;
-  top:392%;
+  top: 92%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
