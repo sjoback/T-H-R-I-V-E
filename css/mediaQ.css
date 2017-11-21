@@ -35,7 +35,7 @@
     background: black;
     vertical-align: middle;
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
   .thrivestore-link3{
     font-size: 15px;
@@ -46,7 +46,7 @@
     background: black;
     vertical-align: middle;
     margin-top: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
   }
 .s2-closebtn {
    width: 45px;
@@ -54,9 +54,9 @@
    margin-bottom: -10%;
 }
  .s3-closebtn {
-   width: 50px;
-   height: 50px;
-   margin-bottom: 5%;
+   width: 45px;
+   height: 45px;
+   margin-bottom: -5%;
 }
   /*Section one styling*/
   .section1{
@@ -127,6 +127,7 @@
     padding: 0% 5% 0% 5%;
     text-align: left;
     line-height: 150%;
+    margin-top: -10px;
   }
   .s3-readMore h2 {
     text-align: left;
