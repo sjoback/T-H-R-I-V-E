@@ -31,33 +31,33 @@
     text-align: center;
     text-decoration: none;
     color: white;
-    padding: 5px 5px 5px 5px;
+    padding: 15px 10px 15px 10px;
     background: black;
     vertical-align: middle;
-    margin-top: 0%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 3%;
   }
   .thrivestore-link3{
     font-size: 15px;
     text-align: center;
     text-decoration: none;
     color: white;
-    padding: 5px 5px 5px 5px;
+    padding: 15px 10px 15px 10px;
     background: black;
     vertical-align: middle;
     margin-top: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
   }
-.s2-closebtn {
-   width: 25px;
-   height: 25px;
-   margin-bottom: 5%;
-}
- .s3-closebtn {
-   width: 25px;
-   height: 25px;
-   margin-bottom: 5%;
-}
+   .s2-closebtn {
+      width: 45px;
+      height: 45px;
+      margin-bottom: -10%;
+   }
+    .s3-closebtn {
+      width: 45px;
+      height: 45px;
+      margin-bottom: -5%;
+   }
   /*Section one styling*/
   .section1{
     background-image: url("../resources/mobPage1.png");
@@ -92,7 +92,7 @@
     font-size: 18px;
     padding: 0% 5% 0% 5%;
     text-align: left;
-    line-height: 100%;
+    line-height: 170%;
   }
   .s2-readMore h2 {
     margin-top: -5%;
@@ -126,7 +126,8 @@
     font-size: 18px;
     padding: 0% 5% 0% 5%;
     text-align: left;
-    line-height: 100%;
+    line-height: 150%;
+    margin-top: -10px;
   }
   .s3-readMore h2 {
     text-align: left;
