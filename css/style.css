@@ -38,7 +38,7 @@ body{
   margin-bottom: 5px;
 }
 .section1{
-  background-image: url('../resources/webPage1.png');
+  background-image: url('../resources/web/1.png');
   transition: 0.5s;
 }
 .section1-textbox{
@@ -92,7 +92,7 @@ body{
   }
 }
 .section2{
-  background-image: url('../resources/webPage2.png');
+  background-image: url('../resources/web/2.png');
   transition: 0.5s;
 }
 .section2-textbox{
@@ -150,7 +150,7 @@ body{
   margin-bottom: 10%;
 }
 .s2-closebtn {
-  background-image: url("../resources/closeBtn.svg");
+  background-image: url("../resources/icons/closeBtn.svg");
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -204,7 +204,7 @@ body{
 
 }
 .section3{
-  background-image: url('../resources/webPage3.png');
+  background-image: url('../resources/web/3.png');
   transition: 0.5s;
 }
 .section3-textbox{
@@ -281,7 +281,7 @@ body{
   transition: 0.5s, transform 5s;
 }
 .s3-closebtn {
-  background-image: url("../resources/closeBtn.svg");
+  background-image: url("../resources/icons/closeBtn.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 50px;
