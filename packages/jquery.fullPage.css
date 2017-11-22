@@ -127,7 +127,11 @@ html.fp-enabled,
 .fp-slidesNav ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 #fp-nav ul li,
 .fp-slidesNav ul li {
     display: block;
@@ -175,11 +179,13 @@ html.fp-enabled,
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-#fp-nav ul li:hover a span,
-.fp-slidesNav ul li:hover a span{
-    width: 10px;
-    height: 10px;
-    margin: -5px 0px 0px -5px;
+@media only screen and (min-width: 500px){
+  #fp-nav ul li:hover a span,
+  .fp-slidesNav ul li:hover a span{
+      width: 10px;
+      height: 10px;
+      margin: -5px 0px 0px -5px;
+  }
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;

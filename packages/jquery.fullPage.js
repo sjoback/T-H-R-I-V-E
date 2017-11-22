@@ -1833,13 +1833,12 @@
             var index = $(this).parent().index();
             scrollPage($(SECTION_SEL).eq(index));
         }
-
+        //test
         //Scrolls the slider to the given slide destination for the given section
         function slideBulletHandler(e){
             e.preventDefault();
             var slides = $(this).closest(SECTION_SEL).find(SLIDES_WRAPPER_SEL);
             var destiny = slides.find(SLIDE_SEL).eq($(this).closest('li').index());
-
             landscapeScroll(slides, destiny);
         }
 

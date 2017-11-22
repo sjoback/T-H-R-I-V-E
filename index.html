@@ -84,32 +84,10 @@
     </div>
 
     <div class="section section4">
-      <div onclick="manual_play()">
-        <div class="slides showing"></div>
-        <div class="slides"></div>
-        <div class="slides"></div>
-        <div class="slides"></div>
-      </div>
-
-      <div class="indicators">
-        <div onclick="jump_to_slide(0)" id="circle1" class="circle"></div>
-        <div onclick="jump_to_slide(1)" id="circle2" class="circle"></div>
-        <div onclick="jump_to_slide(2)" id="circle3" class="circle"></div>
-        <div onclick="jump_to_slide(3)" id="circle4" class="circle"></div>
-      </div>
-
-      <div onclick="manual_play()" id="play-pause" class="showplay"></div>
-
-      <script type="text/javascript">
-      var slides = document.querySelectorAll('.slides');
-      var currentSlide = 0;
-      set_circles(currentSlide);
-      var slideInterval = setInterval(nextSlide,4000);
-      var playing = true;
-      var pauseButton = document.getElementById('pause');
-      var next = document.getElementById('next');
-      var previous = document.getElementById('previous');
-      </script>
+      <div class="slide slide1"></div>
+      <div class="slide slide2"></div>
+      <div class="slide slide3"></div>
+      <div class="slide slide4"></div>
     </div>
 
     <div id="section5-id" class="section section5">
@@ -129,9 +107,10 @@
 
 <script>
   $('#fullpage').fullpage({
+    slidesNavigation: true,
+    scrollHorizontally: true,
   	onLeave: function(index, nextIndex, direction){
   		var leavingSection = $(this);
-
   		//after leaving section 2
   		if(index == 2){
   			close_read_more2();
@@ -139,6 +118,11 @@
   		else if(index == 3){
   			close_read_more3();
   		}
-  	}
+  	},
+    afterRender: function () {
+    setInterval(function () {
+        $.fn.fullpage.moveSlideRight();
+    }, 6000);
+}
   });
 </script>
