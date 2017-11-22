@@ -191,7 +191,7 @@ body{
   flex-direction: column;
   color: black;
   opacity: 0;
-  background-image: url("../resources/web/readMore2.png");
+  background-image: url("../resources/testimg.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -269,7 +269,7 @@ body{
   flex-direction: column;
   color: black;
   opacity: 0;
-  background-image: url("../resources/web/readMore3.png");
+  background-image: url("../resources/testimg.jpg");
   background-position: center;
   background-size: cover;
 }
