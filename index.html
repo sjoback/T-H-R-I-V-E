@@ -4,7 +4,7 @@
   <title>T H R I V E</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="utf-8">
-  <link rel="icon" type="image/gif/png" href="resources/triangle.png">
+  <link rel="icon" type="image/gif/png" href="resources/icons/triangle.png">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/slideStyle.css">
   <link rel="stylesheet" type="text/css" href="css/mediaQ.css">
@@ -109,6 +109,8 @@
   $('#fullpage').fullpage({
     slidesNavigation: true,
     scrollHorizontally: true,
+    controlArrows: false,
+    resetSliders: true,
   	onLeave: function(index, nextIndex, direction){
   		var leavingSection = $(this);
   		//after leaving section 2
@@ -122,7 +124,8 @@
     afterRender: function () {
     setInterval(function () {
         $.fn.fullpage.moveSlideRight();
+
     }, 6000);
-}
+  }
   });
 </script>
